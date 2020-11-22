@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "serve": "node lib/index.js",
+    "dev": "node -r dotenv/config lib/index.js",
     "start": "ts-node-dev --watch public,views --respawn src/index.ts",
     "test": "npm-run-all build",
     "format": "prettier --parser typescript --no-semi --single-quote --trailing-comma es5 --write src/**.ts",
@@ -33,6 +34,7 @@
     "@types/node-fetch": "^2.5.7",
     "@types/url-join": "^4.0.0",
     "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-jwt": "^6.0.0",
